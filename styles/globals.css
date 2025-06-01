@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply bg-primary text-textPrimary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors font-lato;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-accent px-8 py-3 rounded-lg border-2 border-accent hover:bg-accent/10 transition-colors font-lato;
+  }
+
+  .section {
+    @apply py-16;
+  }
+
+  .section-sm {
+    @apply py-8;
+  }
+
+  .section-lg {
+    @apply py-24;
+  }
+
+  .heading-1 {
+    @apply font-poppins font-bold text-4xl sm:text-5xl lg:text-6xl text-textPrimary;
+  }
+
+  .heading-2 {
+    @apply font-poppins font-semibold text-3xl text-textPrimary;
+  }
+
+  .heading-3 {
+    @apply font-poppins font-semibold text-2xl text-textPrimary;
+  }
+
+  .body-text {
+    @apply font-lato text-textSecondary;
+  }
+} 
